@@ -26,7 +26,7 @@ from resources.CancelOrderRessource import CustomerCancelAuto
 from resources.UpdatePassword import UpdatePasswordResource, UpdatePasswordStringerResource #lien
 from resources.QrScan import QrScanner
 
-params = urllib.parse.quote_plus("DRIVER={SQL Server};SERVER=apptennispro.database.windows.net;DATABASE=tennispro_dev;UID=tennispro@apptennispro;PWD=Deploy@202103") # For Windows
+params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};SERVER=apptennispro.database.windows.net;DATABASE=tennispro_dev;UID=tennispro@apptennispro;PWD=Deploy@202103") # For Windows
 # params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};SERVER=apptennispro.database.windows.net;DATABASE=tennispro_dev;UID=tennispro@apptennispro;PWD=Deploy@202103") # For Linux
 # params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};SERVER=tennissport.database.windows.net;DATABASE=tennissport;UID=borakay;PWD=Seasonalsport@202110") # For Linux
 # params = urllib.parse.quote_plus(os.environ.get('DB'))
