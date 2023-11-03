@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Borakay</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" class="email">
+    <tbody>
+    <tr>
+        {% if ShopID == '1' %}
+        <td>
+            <table cellpadding="0" cellspacing="0" style="width:100%;">
+                <tbody>
+                <tr>
+                    <td style="color:#555555;font-size:22px;padding:30px 50px 0px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        Bonjour <span style="font-weight:bold;">{{name}}<img goomoji="1f3be"
+                                                                             data-goomoji="1f3be"
+                                                                             style="margin:0 0.2ex;vertical-align:middle;max-height:24px"
+                                                                             alt="🎾"
+                                                                             src="https://mail.google.com/mail/e/1f3be"
+                                                                             data-image-whitelisted=""
+                                                                             class="CToWUd"></span>,
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#5e5e5e;font-weight:400;font-size:15px;padding:15px 50px;word-wrap:break-word;line-height:25px;word-spacing:2px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        Cet e-mail confirme que votre commande de Raquette - <u><b>{{RacketName}}</b></u>
+                        est automatiquement annulée car vous ne vous êtes pas rendu dans la boutique pour récupérer votre raquette de test réservée.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#5e5e5e;font-weight:400;font-size:15px;padding:15px 50px;word-wrap:break-word;line-height:25px;word-spacing:2px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        ------------------------------------------------------------------------
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#5e5e5e;font-weight:400;font-size:15px;padding:15px 50px;word-wrap:break-word;line-height:25px;word-spacing:2px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        <img width="220" height="45" style="width:2.2916in;height:.4687in"
+                             id="m_8686825286675375114Image_x0020_1"
+                             src="https://firebasestorage.googleapis.com/v0/b/tennispro-real-time-database.appspot.com/o/EmailAttachment%2Femail_attached_logo.jpg?alt=media&token=7d347e1d-4831-497f-b1ab-d06ad79557a5"
+                             data-image-whitelisted="" class="CToWUd">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#5e5e5e;font-weight:400;font-size:15px;padding:15px 50px;word-wrap:break-word;line-height:25px;word-spacing:2px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        Tennispro Boulogne - 49 boulevard de la république - 92100
+                        Boulogne-Billancourt<br>
+                        Tél : 01.46.21.69.69 <a href="mailto:magasinboulogne@tennispro.fr"
+                                                target="_blank">magasinboulogne@tennispro.fr</a><br>
+                        -------------------------------------------------------------------------
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#5e5e5e;font-weight:400;font-size:15px;padding:15px 50px;word-wrap:break-word;line-height:25px;word-spacing:2px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        Vos données à caractère personnel font l'objet d'un traitement par la
+                        société TENNIS PRO BOULOGNE et BORAKAY SOFTWARE SARL <a
+                            href="http://www.tennispro.fr/" target="_blank">selon les modalités de
+                        notre politique de données personnelles</a>. Elles sont traitées sur la base
+                        de votre consentement afin de vous adresser des emails d’information sur
+                        l’état de votre raquette de tennis. Seuls ont accès aux données à caractère
+                        personnel, dans la limite de leurs attributions respectives les services de
+                        TENNIS PRO BOULOGNE et le prestataire BORAKAY SOFTWARE SARL habilité à
+                        traiter vos données.
+                        Conformément à la loi Informatique et libertés du 06/01/78 modifiée et au
+                        RGPD (UE) 2016/679 du 27 avril 2016, vous disposez d'un droit d'accès et
+                        d'un droit de rectification des données vous concernant et, s'ils sont
+                        applicables, d'un droit de suppression, d'un droit d'opposition au
+                        traitement de vos données, d'un droit à l'effacement et à la limitation du
+                        traitement ainsi que d'un droit à la portabilité de vos données. Vous
+                        disposez également du droit de définir des directives relatives au sort de
+                        vos données après votre décès. A tout moment vous pouvez gérer vos
+                        abonnements en envoyant un email à <a href="mailto:tennispro@borakay.fr"
+                                                              target="_blank">tennispro@borakay.fr</a>.
+                        Vous disposez enfin du droit d'introduire une réclamation auprès de la CNIL.
+                        Vos données sont conservées pendant une durée de trois ans à compter de leur
+                        collecte ou du dernier contact ou de la fin de la relation commerciale. Les
+                        données permettant d'établir la preuve d'un droit ou d'un contrat, ou
+                        conservées au titre du respect d'une obligation légale sont archivées
+                        conformément aux dispositions en vigueur. Les données personnelles de plus
+                        de 3 ans sont anonymisées.
+                    </td>	
+                </tr>
+					<tr>
+                        <td style="color:#5e5e5e;font-size:10px;padding:30px 50px 0px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                            Nous espérons que vous avez trouvé ce message utile. Si vous ne voulez plus recevoir les futurs e-mails Tennispro de ce type <span style="font-weight:bold;"><a href="{{unsubscribeLink}}" target="_blank">cliquer ici</a></span>. Attention, vous ne serez plus averti quand votre raquette sera cordée.
+                        </td>
+				</tr>
+                </tbody>
+            </table>
+        </td>
+        {% elif ShopID == '2'  %}
+        <td>
+            <table cellpadding="0" cellspacing="0" style="width:100%;">
+                <tbody>
+                <tr>
+                    <td style="color:#555555;font-size:22px;padding:30px 50px 0px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        Bonjour <span style="font-weight:bold;">{{name}}<img goomoji="1f3be"
+                                                                             data-goomoji="1f3be"
+                                                                             style="margin:0 0.2ex;vertical-align:middle;max-height:24px"
+                                                                             alt="🎾"
+                                                                             src="https://mail.google.com/mail/e/1f3be"
+                                                                             data-image-whitelisted=""
+                                                                             class="CToWUd"></span>,
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#5e5e5e;font-weight:400;font-size:15px;padding:15px 50px;word-wrap:break-word;line-height:25px;word-spacing:2px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        Cet e-mail confirme que votre commande de Raquette - <u><b>{{RacketName}}</b></u>
+                        est automatiquement annulée car vous ne vous êtes pas rendu dans la boutique pour récupérer votre raquette de test réservée.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#5e5e5e;font-weight:400;font-size:15px;padding:15px 50px;word-wrap:break-word;line-height:25px;word-spacing:2px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        ------------------------------------------------------------------------
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#5e5e5e;font-weight:400;font-size:15px;padding:15px 50px;word-wrap:break-word;line-height:25px;word-spacing:2px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        <img width="220" height="45" style="width:2.2916in;height:.4687in"
+                             id="m_8686825286675375114Image_x0020_1"
+                             src="https://firebasestorage.googleapis.com/v0/b/tennispro-real-time-database.appspot.com/o/TennisShopLogo%2FTennisPro_Bois_Colombes_Logo.png?alt=media&token=7245203c-363a-43ec-b19a-2207a33012d9"
+                             data-image-whitelisted="" class="CToWUd">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#5e5e5e;font-weight:400;font-size:15px;padding:15px 50px;word-wrap:break-word;line-height:25px;word-spacing:2px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        Tennispro Bois-Colombes - 2 Rue du Moulin Masse, 92270
+                        Bois-Colombes<br>
+                        Tél : 01.57.68.69.29 <a href="mailto:magasinboiscolombes@tennispro.fr"
+                                                target="_blank">magasinboiscolombes@tennispro.fr</a><br>
+                        -------------------------------------------------------------------------
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#5e5e5e;font-weight:400;font-size:15px;padding:15px 50px;word-wrap:break-word;line-height:25px;word-spacing:2px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                        Vos données à caractère personnel font l'objet d'un traitement par la
+                        société TENNIS PRO BOIS-COLOMBES et BORAKAY SOFTWARE SARL <a
+                            href="http://www.tennispro.fr/" target="_blank">selon les modalités de
+                        notre politique de données personnelles</a>. Elles sont traitées sur la base
+                        de votre consentement afin de vous adresser des emails d’information sur
+                        l’état de votre raquette de tennis. Seuls ont accès aux données à caractère
+                        personnel, dans la limite de leurs attributions respectives les services de
+                        TENNIS PRO BOIS-COLOMBES. et le prestataire BORAKAY SOFTWARE SARL habilité à
+                        traiter vos données.
+                        Conformément à la loi Informatique et libertés du 06/01/78 modifiée et au
+                        RGPD (UE) 2016/679 du 27 avril 2016, vous disposez d'un droit d'accès et
+                        d'un droit de rectification des données vous concernant et, s'ils sont
+                        applicables, d'un droit de suppression, d'un droit d'opposition au
+                        traitement de vos données, d'un droit à l'effacement et à la limitation du
+                        traitement ainsi que d'un droit à la portabilité de vos données. Vous
+                        disposez également du droit de définir des directives relatives au sort de
+                        vos données après votre décès. A tout moment vous pouvez gérer vos
+                        abonnements en envoyant un email à <a href="mailto:tennispro@borakay.fr"
+                                                              target="_blank">tennispro@borakay.fr</a>.
+                        Vous disposez enfin du droit d'introduire une réclamation auprès de la CNIL.
+                        Vos données sont conservées pendant une durée de trois ans à compter de leur
+                        collecte ou du dernier contact ou de la fin de la relation commerciale. Les
+                        données permettant d'établir la preuve d'un droit ou d'un contrat, ou
+                        conservées au titre du respect d'une obligation légale sont archivées
+                        conformément aux dispositions en vigueur. Les données personnelles de plus
+                        de 3 ans sont anonymisées.
+                    </td>	
+                </tr>
+					<tr>
+                        <td style="color:#5e5e5e;font-size:10px;padding:30px 50px 0px;font: small/ 1.5 Arial,Helvetica,sans-serif;">
+                            Nous espérons que vous avez trouvé ce message utile. Si vous ne voulez plus recevoir les futurs e-mails Tennispro de ce type <span style="font-weight:bold;"><a href="{{unsubscribeLink}}" target="_blank">cliquer ici</a></span>. Attention, vous ne serez plus averti quand votre raquette sera cordée.
+                        </td>
+				</tr>
+                </tbody>
+            </table>
+        </td>
+        {% endif %}
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
