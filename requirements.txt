@@ -1,0 +1,11 @@
+pyodbc
+Flask
+flask_restful
+Flask-JWT
+Flask-SQLAlchemy
+Flask-Mail
+requests
+Jinja2
+email-validator
+sendgrid
+opencv-python
