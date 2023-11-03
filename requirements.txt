@@ -1,5 +1,5 @@
 pyodbc
-Flask
+Flask==2.2.2
 flask_restful
 Flask-JWT
 Flask-SQLAlchemy
@@ -8,4 +8,7 @@ requests
 Jinja2
 email-validator
 sendgrid
-opencv-python
+#opencv-python
+opencv-python-headless
+Werkzeug==2.3.7
+gunicorn
